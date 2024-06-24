@@ -28,6 +28,7 @@ const Home = () => {
                                 <th scope='col'>Name</th>
                                 <th scope='col'>Email</th>
                                 <th scope='col'>Number</th>
+                                {/* <th scope='col'>Notes</th> */}
                                 <th scope='col'>Action</th>
                             </tr>
                         </thead>
@@ -39,6 +40,7 @@ const Home = () => {
                                         <td>{contact.name}</td>
                                         <td>{contact.email}</td>
                                         <td>{contact.number}</td>
+                                        {/* <td>{contact.notes}</td> */}
                                         <td>
                                             <Link to={`/edit/${contact.id}`} className='btn btn-small btn-primary me-2'>Edit</Link>
                                             <button type='button' onClick={() => deleteContact(contact.id)} className='btn btn-small btn-danger'>Delete</button>

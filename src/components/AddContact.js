@@ -8,6 +8,7 @@ const AddContact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
+    // const [notes, setNotes] = useState('');
 
     const contacts = useSelector(state => state);
 
@@ -62,6 +63,10 @@ const AddContact = () => {
                             <input type='number' placeholder='Phone Number' className='form-control'
                                 value={number} onChange={e => setNumber(e.target.value)} />
                         </div>
+                        {/* <div className='form-group mb-3'>
+                            <input type='notes' placeholder='write notes' className='form-control'
+                                value={notes} onChange={e => setNotes(e.target.value)} />
+                        </div> */}
                         <div className='form-group mb-3'>
                             <input type='submit' value='Add Contact' className='btn btn-block btn-dark' />
                         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { Route, Routes } from 'react-router-dom';
 
@@ -21,7 +21,8 @@ const App = () => {
                             id: contact.id,
                             name: contact.name,
                             number: contact.phone,
-                            email: contact.email
+                            email: contact.email,
+                            notes: contact.notes
                         });
                     })
                 });
